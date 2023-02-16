@@ -20,111 +20,111 @@ interface TaskState {
 
 const initialState: TaskState = {
   tasks: [
-    // {
-    //   ID: 1,
-    //   DATE: "2023-02-03T08:38:55.600Z",
-    //   COUNT: 2,
-    //   PAGE: 1,
-    //   DATA: [
-    //     {
-    //       ID: 107,
-    //       PROJECT: "LENDO VELOLIA",
-    //       TASK: "MARKET PLACE",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman 111",
-    //       STATE: "START",
-    //       START_AT: "2023-02-03T08:23:49.620Z",
-    //       STOP_AT: "2023-02-03T08:23:49.620Z",
-    //       CREATED_AT: "2023-02-03T08:23:49.620Z",
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 112,
-    //       PROJECT: "LENDO VELOLIA2",
-    //       TASK: "MARKET PLACE2",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "CREATE",
-    //       START_AT: "2023-02-03T11:16:28.684Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 105,
-    //       PROJECT: "LENDO VELOLIA3",
-    //       TASK: "MARKET PLACE3",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "CREATE",
-    //       START_AT: "2023-02-03T11:16:28.684Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 106,
-    //       PROJECT: "LENDO VELOLIA",
-    //       TASK: "MARKET PLACE",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "STOP",
-    //       START_AT: "2023-02-03T11:16:06.303Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //   ],
-    // },
-    // {
-    //   ID: 2,
-    //   DATE: "2023-02-02T08:38:55.600Z",
-    //   COUNT: 2,
-    //   PAGE: 1,
-    //   DATA: [
-    //     {
-    //       ID: 107,
-    //       PROJECT: "LENDO VELOLIA",
-    //       TASK: "MARKET PLACE",
-    //       COMMENT:
-    //         "xozircha nimadurni oylavoman bilmiman sdfsfs sdfsfs sdf dddddddddd sdfsdf s",
-    //       STATE: "STOP",
-    //       START_AT: "2023-02-03T11:16:28.684Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: "2023-02-03T08:23:49.620Z",
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 108,
-    //       PROJECT: "LENDO VELOLIA2",
-    //       TASK: "MARKET PLACE2",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "STOP",
-    //       START_AT: "2023-02-03T11:16:28.684Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 109,
-    //       PROJECT: "LENDO VELOLIA3",
-    //       TASK: "MARKET PLACE3",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "STOP",
-    //       START_AT: "2023-02-03T11:16:06.303Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //     {
-    //       ID: 110,
-    //       PROJECT: "LENDO VELOLIA",
-    //       TASK: "MARKET PLACE",
-    //       COMMENT: "xozircha nimadurni oylavoman bilmiman",
-    //       STATE: "STOP",
-    //       START_AT: "2023-02-03T11:16:06.303Z",
-    //       STOP_AT: "2023-02-03T11:16:28.684Z",
-    //       CREATED_AT: null,
-    //       UPDATED_AT: null,
-    //     },
-    //   ],
-    // },
+    {
+      ID: 1,
+      DATE: "2023-02-03T08:38:55.600Z",
+      COUNT: 2,
+      PAGE: 1,
+      DATA: [
+        {
+          ID: 108,
+          PROJECT: "LENDO VELOLIA",
+          TASK: "MARKET PLACE",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman 111",
+          STATE: "START",
+          START_AT: "2023-02-03T08:23:49.620Z",
+          STOP_AT: "2023-02-03T08:23:49.620Z",
+          CREATED_AT: "2023-02-03T08:23:49.620Z",
+          UPDATED_AT: null,
+        },
+        {
+          ID: 107,
+          PROJECT: "LENDO VELOLIA2",
+          TASK: "MARKET PLACE2",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "CREATE",
+          START_AT: "2023-02-03T11:16:28.684Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+        {
+          ID: 105,
+          PROJECT: "LENDO VELOLIA3",
+          TASK: "MARKET PLACE3",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "CREATE",
+          START_AT: "2023-02-03T11:16:28.684Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+        {
+          ID: 106,
+          PROJECT: "LENDO VELOLIA",
+          TASK: "MARKET PLACE",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "STOP",
+          START_AT: "2023-02-03T11:16:06.303Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+      ],
+    },
+    {
+      ID: 2,
+      DATE: "2023-02-02T08:38:55.600Z",
+      COUNT: 2,
+      PAGE: 1,
+      DATA: [
+        {
+          ID: 107,
+          PROJECT: "LENDO VELOLIA",
+          TASK: "MARKET PLACE",
+          COMMENT:
+            "xozircha nimadurni oylavoman bilmiman sdfsfs sdfsfs sdf dddddddddd sdfsdf s",
+          STATE: "STOP",
+          START_AT: "2023-02-03T11:16:28.684Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: "2023-02-03T08:23:49.620Z",
+          UPDATED_AT: null,
+        },
+        {
+          ID: 108,
+          PROJECT: "LENDO VELOLIA2",
+          TASK: "MARKET PLACE2",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "STOP",
+          START_AT: "2023-02-03T11:16:28.684Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+        {
+          ID: 109,
+          PROJECT: "LENDO VELOLIA3",
+          TASK: "MARKET PLACE3",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "STOP",
+          START_AT: "2023-02-03T11:16:06.303Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+        {
+          ID: 110,
+          PROJECT: "LENDO VELOLIA",
+          TASK: "MARKET PLACE",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman",
+          STATE: "STOP",
+          START_AT: "2023-02-03T11:16:06.303Z",
+          STOP_AT: "2023-02-03T11:16:28.684Z",
+          CREATED_AT: null,
+          UPDATED_AT: null,
+        },
+      ],
+    },
   ],
   currentTasks: [
     {
@@ -198,59 +198,19 @@ const successAlert = (
 
 const errorAlert = (
   state: WritableDraft<TaskState>,
-  action:
-    | PayloadAction<
-        string | undefined,
-        string,
-        {
-          arg: undefined;
-          requestId: string;
-          requestStatus: "rejected"; // state.error = action.payload;
-          // state.error = action.payload;
-          aborted: boolean;
-          condition: boolean;
-        } & ({ rejectedWithValue: true } | ({ rejectedWithValue: false } & {})),
-        SerializedError
-      >
-    | PayloadAction<
-        string | undefined,
-        string,
-        {
-          arg: INewTask;
-          requestId: string;
-          requestStatus: "rejected"; // state.error = action.payload;
-          // state.error = action.payload;
-          aborted: boolean;
-          condition: boolean;
-        } & ({ rejectedWithValue: true } | ({ rejectedWithValue: false } & {})),
-        SerializedError
-      >
-    | PayloadAction<
-        string | undefined,
-        string,
-        {
-          arg: number;
-          requestId: string;
-          requestStatus: "rejected"; // state.error = action.payload;
-          // state.error = action.payload;
-          aborted: boolean;
-          condition: boolean;
-        } & ({ rejectedWithValue: true } | ({ rejectedWithValue: false } & {})),
-        SerializedError
-      >
-    | PayloadAction<
-        string | undefined,
-        string,
-        {
-          arg: { WORK_ID: number; STATE: string };
-          requestId: string;
-          requestStatus: "rejected"; // state.error = action.payload;
-          // state.error = action.payload;
-          aborted: boolean;
-          condition: boolean;
-        } & ({ rejectedWithValue: true } | ({ rejectedWithValue: false } & {})),
-        SerializedError
-      >
+  action: PayloadAction<
+    string | undefined,
+    string,
+    {
+      arg: undefined | INewTask | number | { WORK_ID: number; STATE: string };
+      requestId: string;
+      requestStatus: "rejected";
+      // state.error = action.payload;
+      aborted: boolean;
+      condition: boolean;
+    } & ({ rejectedWithValue: true } | ({ rejectedWithValue: false } & {})),
+    SerializedError
+  >
 ) => {
   state.alert = {
     title: "Ошибка",
@@ -258,6 +218,16 @@ const errorAlert = (
     icon: "icon-error",
     isOpen: true,
   };
+
+  // setTimeout(() => {
+  //   debugger;
+  //   state.alert = {
+  //     title: "Ошибка",
+  //     text: action.payload,
+  //     icon: "icon-error",
+  //     isOpen: false,
+  //   };
+  // }, 5000);
 };
 
 export const fetchTasks = createAsyncThunk<
@@ -336,6 +306,7 @@ export const startStopTask = createAsyncThunk<
   { rejectValue: string }
 >("task/startStopTask", async function (data, { rejectWithValue }) {
   try {
+    // debugger;
     const response = await axios.put("/task/updated/state", data);
 
     console.log(response);
@@ -430,6 +401,7 @@ export const taskSlice = createSlice({
         errorAlert(state, action);
       })
       .addCase(startStopTask.pending, (state) => {
+        // debugger;
         state.isLoading = true;
         state.error = null;
       })
@@ -438,6 +410,7 @@ export const taskSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(startStopTask.rejected, (state, action) => {
+        // debugger;
         errorAlert(state, action);
       });
   },

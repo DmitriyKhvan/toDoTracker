@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { setTooltip, startStopTask } from "../../store/resucers/TaskSlice";
 
@@ -25,8 +25,12 @@ export default function Tooltip() {
 
   const startTaskHandlert = () => {
     if (startTask && task) {
+      // debugger;
       dispatch(startStopTask({ WORK_ID: startTask.ID, STATE: "STOP" }));
-      dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
+      setTimeout(() => {
+        dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
+      }, 5000);
+      // dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
     }
   };
 

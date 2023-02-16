@@ -6,6 +6,7 @@ import "moment/dist/locale/ru";
 
 import "./taskList.scss";
 import { setTooltip } from "../../store/resucers/TaskSlice";
+import EmptyTasks from "../emptyTasks/emptyTasks";
 
 export default function TaskList() {
   // moment.locale("ru");
@@ -40,9 +41,7 @@ export default function TaskList() {
           ))}
         </div>
       ) : (
-        <div className="tasksEmpty">
-          <p>Вы ничем не заняты.Cоздайте новую задачу</p>
-        </div>
+        <EmptyTasks />
       )}
     </>
   );

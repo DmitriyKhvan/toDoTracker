@@ -22,6 +22,15 @@ export default function Alert() {
     );
   };
 
+  if (isOpen == true) {
+    const timeoutId = setTimeout(() => {
+      console.log(1111);
+
+      close();
+      clearTimeout(timeoutId);
+    }, 5000);
+  }
+
   return (
     <div className={classnames("alert", [icon], { isOpen })}>
       <button onClick={close} className="close">
