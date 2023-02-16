@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../icon/fonts/icomoon.eot?bmuxac");
+  src: url("../icon/fonts/icomoon.eot?bmuxac#iefix") format("embedded-opentype"),
+    url("../icon/fonts/icomoon.ttf?bmuxac") format("truetype"),
+    url("../icon/fonts/icomoon.woff?bmuxac") format("woff"),
+    url("../icon/fonts/icomoon.svg?bmuxac#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checked .path1:before {
+  content: "\e900";
+  color: rgb(60, 185, 93);
+}
+.icon-checked .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-edit:before {
+  content: "\e902";
+  color: #2d3a5a;
+}
+.icon-error .path1:before {
+  content: "\e903";
+  color: rgb(255, 255, 255);
+  opacity: 0.01;
+}
+.icon-error .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(232, 78, 45);
+}
+.icon-info-2 .path1:before {
+  content: "\e905";
+  color: rgb(57, 135, 224);
+}
+.icon-info-2 .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-info:before {
+  content: "\e907";
+  color: #3987e0;
+}
+.icon-new:before {
+  content: "\e908";
+  color: #2d3a5a;
+}
+.icon-play:before {
+  content: "\e909";
+  color: #2d3a5a;
+}
+.icon-stop:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-warning .path1:before {
+  content: "\e90b";
+  color: rgb(255, 255, 255);
+  opacity: 0.01;
+}
+.icon-warning .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(224, 177, 64);
+}

@@ -1,0 +1,128 @@
+@import "./assets/css/reset.css";
+@import "./assets/css/mixin.scss";
+@import "./assets/css/icons.css";
+@import "./assets/css/color.scss";
+
+.btnBlue {
+  @include btn;
+}
+
+.btn {
+  @include btn(transparent, #949bac);
+}
+
+.separate {
+  width: 100%;
+  height: 1px;
+  background: var(--gray-color);
+}
+
+.stopTimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #619fe6;
+
+  span {
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border-radius: 2px;
+
+    cursor: pointer;
+  }
+
+  &.big {
+    width: 66px;
+    height: 66px;
+
+    span {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.editBtn {
+  background: #fff;
+  border: 1px solid rgba(45, 58, 90, 0.25);
+
+  span {
+    &::before {
+      color: rgba(45, 58, 90, 0.25);
+    }
+  }
+}
+
+.playBtn {
+  position: relative;
+  background: rgba(57, 135, 224, 0.1);
+
+  span {
+    // &::before {
+    //   color: rgba(45, 58, 90, 0.25);
+    // }
+  }
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+  background-color: rgb(231, 231, 231);
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-light-color);
+  border-radius: 10px;
+  // box-shadow: inset 1px 1px 10px #f3faf775;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-color);
+}
+
+// Sample Start
+.btn-round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.btn-medium {
+  min-width: 46px;
+  min-height: 46px;
+}
+
+.btn-big {
+  min-width: 66px;
+  min-height: 66px;
+}
+
+.btn-blue {
+  background: var(--blue-color);
+}
+
+.btn-blue-light {
+  background: var(--blue-light-color);
+}
+
+.icon-medium {
+  font-size: 24px;
+}
+
+.icon-big {
+  font-size: 36px;
+}
+
+.icon-checked-blue .path1::before {
+  color: var(--blue-color);
+}
+
+// Sample End

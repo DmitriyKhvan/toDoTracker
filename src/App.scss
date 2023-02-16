@@ -1,0 +1,57 @@
+.App {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: #f7f8fb;
+
+  .wrapHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 69px;
+    // opacity: 0.05;
+    border-bottom: 1px solid #eaecef;
+
+    .header {
+      display: flex;
+      align-items: center;
+      width: 1134px;
+      height: 100%;
+      margin: 0 20px;
+      // background: rgb(151, 50, 67);
+
+      .logo {
+        width: 177px;
+      }
+    }
+  }
+
+  .wrapTracker {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .tracker {
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: space-between;
+      // background: rgb(125, 163, 125);
+      width: 1134px;
+      height: calc(100vh - 100px);
+      margin: 0 20px;
+
+      .left {
+        max-width: 745px;
+        flex-grow: 1;
+        margin-right: 10px;
+      }
+
+      .right {
+        max-width: 358px;
+        flex-grow: 1;
+        height: 100%;
+      }
+    }
+  }
+}

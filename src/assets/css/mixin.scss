@@ -1,0 +1,8 @@
+@mixin btn($bgColor: var(--blue-color), $color: #fff) {
+  background: $bgColor;
+  color: $color;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}

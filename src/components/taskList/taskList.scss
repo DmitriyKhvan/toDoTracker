@@ -1,0 +1,40 @@
+.taskListWrap {
+  width: 100%;
+  margin-top: 30px;
+  height: calc(100vh - 395px);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .taskList {
+    .dateWrap {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+      margin-left: 3px;
+
+      .date {
+        display: flex;
+        flex-grow: 1;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--black-color);
+        max-width: 446px;
+      }
+
+      .timeWrap {
+        font-size: 18px;
+        margin-right: 20px;
+
+        .timeText {
+          color: rgba(0, 16, 37, 0.4);
+        }
+
+        .time {
+          font-weight: 600;
+          color: rgba(0, 16, 37, 0.5);
+        }
+      }
+    }
+  }
+}

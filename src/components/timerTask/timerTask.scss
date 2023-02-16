@@ -1,0 +1,103 @@
+.timeTask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #3987e0;
+  border-radius: 10px;
+
+  .taskInfoWrap {
+    padding: 25px 20px 0 20px;
+    .titleProject {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .textTask {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .commentTask {
+      margin-top: 12px;
+      padding: 8px 15px;
+      background: #ecf3fc;
+      border-radius: 7.5px;
+      color: #001025;
+    }
+  }
+
+  .timerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    .timer {
+      font-size: 50px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 11px;
+    }
+  }
+
+  &.create {
+    background: #fff;
+
+    .taskInfoWrap {
+      .titleProject {
+        color: #001025;
+      }
+
+      .textTask {
+        color: #001025;
+      }
+
+      .commentTask {
+        background: #ecf3fc;
+        color: #001025;
+      }
+    }
+
+    .timerWrap {
+      .timer {
+        color: #808892;
+      }
+    }
+  }
+
+  &.halfPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+
+    .timerWrap {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 117px;
+      padding: 0 20px;
+      border-top: 1px solid #4c93e3;
+      margin-top: 0;
+      flex-grow: 0;
+
+      .timer {
+        margin-bottom: 0px;
+      }
+    }
+
+    &.create {
+      border-radius: 0 0 10px 10px;
+
+      .timerWrap {
+        border-top: 1px solid #eaecef;
+        .timer {
+          color: #808892;
+        }
+      }
+    }
+  }
+}

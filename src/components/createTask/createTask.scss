@@ -1,0 +1,55 @@
+.createTask {
+  background: #fff;
+  border-radius: 10px;
+
+  .fieldWrap {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 20px;
+
+    .field {
+      padding: 13px 13px 13px 0;
+    }
+
+    .fieldProject {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .fieldTask {
+      font-size: 18px;
+    }
+
+    .fieldComment {
+      background: #f7f8fb;
+      border-radius: 7.5px;
+      padding-left: 10px;
+      font-size: 16px;
+      outline: none;
+      resize: none;
+      min-height: 60px;
+      max-height: 100px;
+
+      &::placeholder {
+        color: #c6c9d0;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 20px;
+    background: #fbfcfd;
+    border-radius: 0 0 10px 10px;
+
+    .formBtns {
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+}
