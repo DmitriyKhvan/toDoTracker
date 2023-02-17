@@ -13,6 +13,7 @@ import { INewTask, ITask } from "../../models/ITask";
 
 import "./task.scss";
 import Timer from "../timer/timer";
+import { timeDisign } from "../../hooks/timeFormat";
 
 interface TaskItemProps {
   task: ITask;
@@ -24,7 +25,7 @@ export default function Task({ task }: TaskItemProps): JSX.Element {
     (state) => state.taskReducer.currentTasks
   );
 
-  let time = null;
+  let time = 0;
   if (STOP_AT !== null && START_AT !== null) {
     time = new Date(STOP_AT).getTime() - new Date(START_AT).getTime();
   }
@@ -127,7 +128,10 @@ export default function Task({ task }: TaskItemProps): JSX.Element {
           ) : STATE === "CREATE" ? (
             <div className="timer ">00:00:00</div>
           ) : (
-            <div className="timer stop">{moment(time).format("HH:mm:ss")}</div>
+            <div className="timer stop">
+              {/* {moment(time).format("HH:mm:ss")} */}
+              {timeDisign(time)}
+            </div>
           )}
 
           {STATE !== "STOP" && (

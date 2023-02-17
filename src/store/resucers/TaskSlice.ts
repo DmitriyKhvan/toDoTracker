@@ -82,10 +82,9 @@ const initialState: TaskState = {
           ID: 107,
           PROJECT: "LENDO VELOLIA",
           TASK: "MARKET PLACE",
-          COMMENT:
-            "xozircha nimadurni oylavoman bilmiman sdfsfs sdfsfs sdf dddddddddd sdfsdf s",
+          COMMENT: "xozircha nimadurni oylavoman bilmiman 777",
           STATE: "STOP",
-          START_AT: "2023-02-03T11:16:28.684Z",
+          START_AT: "2023-02-03T11:07:28.684Z",
           STOP_AT: "2023-02-03T11:16:28.684Z",
           CREATED_AT: "2023-02-03T08:23:49.620Z",
           UPDATED_AT: null,
@@ -212,6 +211,7 @@ const errorAlert = (
     SerializedError
   >
 ) => {
+  // debugger;
   state.alert = {
     title: "Ошибка",
     text: action.payload,
@@ -273,7 +273,7 @@ export const editTask = createAsyncThunk<
   { rejectValue: string }
 >("task/editTask", async function (task, { rejectWithValue }) {
   try {
-    const response = await axios.put("/task/updated", task);
+    const response: any = await axios.put("/task/updated", task);
 
     return response.data;
   } catch (error: any) {
@@ -371,7 +371,7 @@ export const taskSlice = createSlice({
       })
       .addCase(addNewTask.fulfilled, (state, action) => {
         console.log("action", action);
-        debugger;
+        // debugger;
 
         // state.tasks = action.payload
         successAlert(state, action);

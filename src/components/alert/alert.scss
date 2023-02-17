@@ -1,26 +1,24 @@
 .alert {
-  position: absolute;
-  bottom: -50%;
-  right: 0;
-  margin: 20px;
-  width: 400px;
   padding: 11px 30px 11px 15px;
-  border-radius: 10px;
-  display: flex;
-  z-index: 100;
-  transition: all 0.5s ease-in-out;
 
-  // top: 100%;
-  // left: 100%;
+  .ant-notification-notice-content {
+    font-family: "Gilroy" !important;
 
-  // &.icon-checked,
-  // &.icon-error,
-  // &.icon-warning {
-  //   bottom: 0;
-  // }
+    .ant-notification-notice-message {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
 
-  &.isOpen {
-    bottom: 0;
+    .ant-notification-notice-description {
+      font-size: 16px;
+    }
+  }
+
+  .ant-notification-notice-close {
+    top: 7px;
+    left: 100%;
+    margin-left: -33px;
   }
 
   &.icon-warning {
@@ -33,31 +31,5 @@
 
   &.icon-checked {
     background: linear-gradient(0deg, #e5f2eb, #e5f2eb), rgba(60, 185, 93, 0.1);
-  }
-
-  &_icon {
-    margin-top: 3px;
-    font-size: 22px;
-  }
-
-  &_content {
-    font-family: "Gilroy" !important;
-    margin-left: 15px;
-    &-title {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 3px;
-    }
-
-    &-text {
-      font-size: 16px;
-    }
-  }
-
-  .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 11px;
   }
 }

@@ -32,9 +32,7 @@ function App() {
             <TaskList />
           </div>
 
-          <div className="right">
-            <RightPart />
-          </div>
+          <div className="right">{<RightPart />}</div>
         </div>
       </div>
 

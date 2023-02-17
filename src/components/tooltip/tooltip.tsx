@@ -23,14 +23,20 @@ export default function Tooltip() {
     dispatch(setTooltip({ isOpen: false }));
   };
 
-  const startTaskHandlert = () => {
+  const startTaskHandlert = async () => {
     if (startTask && task) {
       // debugger;
-      dispatch(startStopTask({ WORK_ID: startTask.ID, STATE: "STOP" }));
-      setTimeout(() => {
-        dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
-      }, 5000);
-      // dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
+      // const response = await dispatch(
+      //   startStopTask({ WORK_ID: startTask.ID, STATE: "STOP" })
+      // );
+
+      // if (response.meta.requestStatus !== "rejected") {
+      //   await dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
+      // }
+
+      await dispatch(startStopTask({ WORK_ID: startTask.ID, STATE: "STOP" }));
+
+      await dispatch(startStopTask({ WORK_ID: task.ID, STATE: "START" }));
     }
   };
 
